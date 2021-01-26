@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="40dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Title"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/title1"
+            android:textSize="30dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            ></TextView>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_marginRight="50dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_alignEnd="@+id/title1"
+        android:layout_height="wrap_content"
+        android:textColor="#00FF00"
+        android:text="1"
+        android:layout_centerInParent="true"
+        android:textSize="30dp"></TextView>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discriptions"
+        android:maxLines="2"
+        android:ellipsize="end"
+            android:id="@+id/des"
+            android:layout_below="@+id/title1"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            ></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_delete_sweep_24"
+       android:layout_alignEnd="@+id/num"
+        android:layout_centerInParent="true"
+       android:layout_alignParentEnd="true"
+        app:tint="@color/purple_700"
+        >
+
+    </ImageView>
+
+
+
+</RelativeLayout>

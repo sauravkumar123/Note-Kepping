@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@color/white"
+       android:hint="Title"
+        android:layout_marginTop="30dp"
+       android:layout_marginLeft="5dp"
+        android:paddingLeft="20dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/titleofnote"
+
+        android:textSize="30dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="Description"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="20dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/disc"
+        android:textSize="30dp"
+        android:layout_below="@+id/titleofnote"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/disc"
+        android:id="@+id/textpr"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_height="wrap_content"
+        android:text="Priority"></TextView>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textpr"
+        android:autofillHints="Priority"
+        android:layout_marginTop="2dp"
+        android:solidColor="@color/white"
+        android:id="@+id/numberpicker"
+        ></NumberPicker>
+
+
+
+</RelativeLayout>
